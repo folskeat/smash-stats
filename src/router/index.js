@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import WeightView from '../views/WeightView.vue'
+import WalkView from '../views/WalkView.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +15,12 @@ const routes = [
   {
     path: '/weight',
     name: 'weight',
-    component: () => import('../views/WeightView.vue')
+    component: WeightView
+  },
+  {
+    path: '/walk',
+    name: 'walk',
+    component: WalkView
   }
 ]
 

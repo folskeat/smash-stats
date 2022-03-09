@@ -14,7 +14,7 @@ let stats = [
     fullhop: 36.33,
     shorthop: 17.54,
     doublejump: 36.33,
-    image: 'mario.jpg'
+    image: 'mario'
   },
   {
     csspos: 2,
@@ -31,7 +31,7 @@ let stats = [
     fullhop: 34,
     shorthop: 17.3,
     doublejump: 35.5,
-    image: 'dk.jpg'
+    image: 'dk'
   },
   {    
     csspos: 3,
@@ -48,7 +48,7 @@ let stats = [
     fullhop: 27.8,
     shorthop: 13.38,
     doublejump: 29,
-    image: 'link.jpg'
+    image: 'link'
   },
   {
     csspos: 4,
@@ -65,7 +65,7 @@ let stats = [
     fullhop: 37,
     shorthop: 18,
     doublejump: 37,
-    image: 'samus.jpg'
+    image: 'samus'
   },
   {
     csspos: 5,
@@ -82,7 +82,7 @@ let stats = [
     fullhop: 36.09,
     shorthop: 14.43,
     doublejump: 51.56,
-    image: 'yoshi.jpg'
+    image: 'yoshi'
   },
   {
     csspos: 6,
@@ -99,7 +99,7 @@ let stats = [
     fullhop: 25.37,
     shorthop: 12.24,
     doublejump: 21.064,
-    image: 'kirby.jpg'
+    image: 'kirby'
   },
   {
     csspos: 7,
@@ -116,7 +116,7 @@ let stats = [
     fullhop: 35,
     shorthop: 16.4,
     doublejump: 37,
-    image: 'fox.jpg'
+    image: 'fox'
   },
   {
     csspos: 8,
@@ -133,7 +133,7 @@ let stats = [
     fullhop: 35.5,
     shorthop: 17.12,
     doublejump: 35.5,
-    image: 'pikachu.jpg'
+    image: 'pikachu'
   },
   {
     csspos: 9,
@@ -150,7 +150,7 @@ let stats = [
     fullhop: 44,
     shorthop: 19.98,
     doublejump: 41.31,
-    image: 'luigi.jpg'
+    image: 'luigi'
   },
   {
     csspos: 10,
@@ -167,7 +167,7 @@ let stats = [
     fullhop: 34.48,
     shorthop: 16.65,
     doublejump: 45.65,
-    image: 'ness.jpg'
+    image: 'ness'
   },
   {
     csspos: 11,
@@ -184,7 +184,7 @@ let stats = [
     fullhop: 37.31,
     shorthop: 17.98,
     doublejump: 37.31,
-    image: 'falcon.jpg'
+    image: 'falcon'
   },
   {
     csspos: 12,
@@ -201,7 +201,7 @@ let stats = [
     fullhop: 19.79,
     shorthop: 11.26,
     doublejump: 24.866,
-    image: 'puff.jpg'
+    image: 'puff'
   },
 ]
 
