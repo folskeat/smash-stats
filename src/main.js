@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import stats from '../chardata/stats.js'
 
-Vue.config.productionTip = false
+let data = {
+  stat: stats
+}
 
 new Vue({
   router,
+  data,
   render: h => h(App)
 }).$mount('#app')
