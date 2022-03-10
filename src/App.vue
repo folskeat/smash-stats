@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>Characters by...</p>
+    <h1>Characters by...</h1>
     <nav>
       <router-link to="/">Order</router-link> |
       <router-link to="/weight">Weight</router-link> |
@@ -12,23 +12,28 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #7db3e8;
+}
+
+body {
+  background-color: #111111;
 }
 
 nav {
-  padding: 30px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #4c6c8c;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #7db3e8;
 }
 </style>

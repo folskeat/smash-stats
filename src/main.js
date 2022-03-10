@@ -4,7 +4,8 @@ import router from './router'
 import stats from '../chardata/stats.js'
 
 let data = {
-  stat: stats
+  stat: stats,
+  dummy: false,
 }
 
 new Vue({

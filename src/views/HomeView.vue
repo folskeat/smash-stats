@@ -22,10 +22,13 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 50%;
+  background-color: white;
 }
 
 form {
   display: table;
+  background-color: #fff;
+  color: #000;
 }
 
 i {
