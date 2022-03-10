@@ -7,7 +7,7 @@
                     <p>{{character.csspos}}</p>
                 </div>
                 <div class="image">
-                    <img :src="'/images/characters/'+character.image+'.jpg'">
+                    <img :src="'/images/characters/'+character.image+'.png'">
                 </div>
             </div>
         </div>
