@@ -2,9 +2,21 @@
   <div id="app">
     <h1>Characters by...</h1>
     <nav>
-      <router-link to="/">Order</router-link> |
-      <router-link to="/weight">Weight</router-link> |
-      <router-link to="/walk">Walk Speed</router-link>
+      <div>
+        <router-link to="/">Search</router-link> |
+        <router-link to="/weight">Weight</router-link> |
+        <router-link to="/walk">Walk&nbsp;Speed</router-link> |
+        <router-link to="/run">Run&nbsp;Speed</router-link> |
+        <router-link to="/dash">Initial&nbsp;Dash&nbsp;Speed</router-link> |
+        <router-link to="/airmov">Horizontal&nbsp;Air&nbsp;Speed</router-link> |
+        <router-link to="/airacc">Air&nbsp;Acceleration</router-link> |
+        <router-link to="fall">Fall&nbsp;Speed</router-link> |
+        <router-link to="fastfall">Fast&nbsp;Fall&nbsp;Speed</router-link> |
+        <router-link to="gravity">Gravity&nbsp;Multiplier</router-link> |
+        <router-link to="fullhop">Full&nbsp;Hop&nbsp;Height</router-link> |
+        <router-link to="shorthop">Short&nbsp;Hop&nbsp;Height</router-link> |
+        <router-link to="doublejump">Double&nbsp;Jump&nbsp;Height</router-link>
+      </div>
     </nav>
     <router-view/>
   </div>
@@ -35,5 +47,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #7db3e8;
+}
+
+.nowrap {
+  white-space: no-wrap;
 }
 </style>

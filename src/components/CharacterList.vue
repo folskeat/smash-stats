@@ -140,7 +140,7 @@ button {
 
 .list {
     position: absolute;
-    width: 248px;
+    width: 247px;
     margin: 0px;
     padding: 0px;
     list-style-type: none;

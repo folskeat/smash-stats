@@ -18,10 +18,10 @@
                         <th>Rank</th>
                         <th>Icon</th>
                         <th>Name</th>
-                        <th bgcolor="#83d8eb">Weight</th>
+                        <th v-if="!hidden">Weight</th>
                         <th v-if="!hidden">Walk Speed</th>
                         <th v-if="!hidden">Run Speed</th>
-                        <th v-if="!hidden">Initial Dash Speed</th>
+                        <th bgcolor="#83d8eb">Initial Dash Speed</th>
                         <th v-if="!hidden">Horizontal Air Speed</th>
                         <th v-if="!hidden">Air Acceleration</th>
                         <th v-if="!hidden">Fall Speed</th>
@@ -33,13 +33,13 @@
                     </tr>
                 </thead>
                 <tr v-for="(character, index) in sortedCharacters" :key="character.csspos">
-                    <td>{{ranking((index + 1), character.weight)}}</td>
+                    <td>{{ranking((index + 1), character.dash)}}</td>
                     <td><img :src="'/images/icons/' + character.image + '.png'"></td>
                     <td>{{character.name}}</td>
-                    <td bgcolor="#83d8eb"><b>{{character.weight}}</b></td>
+                    <td v-if="!hidden">{{character.weight}}</td>
                     <td v-if="!hidden">{{character.walk}}</td>
                     <td v-if="!hidden">{{character.run}}</td>
-                    <td v-if="!hidden">{{character.dash}}</td>
+                    <td bgcolor="#83d8eb"><b>{{character.dash}}</b></td>
                     <td v-if="!hidden">{{character.airmove}}</td>
                     <td v-if="!hidden">{{character.airacc}}</td>
                     <td v-if="!hidden">{{character.fall}}</td>
@@ -200,7 +200,7 @@ td img {
 <script>
 
 export default {
-  name: 'WeightView',
+  name: 'DashView',
   rank: 0,
   prevChar: 0,
   data() {
@@ -212,10 +212,10 @@ export default {
   computed: {
         sortedCharacters: function() {
             function compare(a, b) {
-                if (a.weight < b.weight) {
+                if (a.dash < b.dash) {
                     return 1;
                 }
-                if (a.weight > b.weight) {
+                if (a.dash > b.dash) {
                     return -1;
                 }
                 return 0;
@@ -235,17 +235,18 @@ export default {
         }
   },
   methods: {
-      ranking(index, weight) {
-          if (weight < this.$options.prevChar) {
-              this.$options.prevChar = weight;
+      ranking(index, dash) {
+          if (dash < this.$options.prevChar) {
+              this.$options.prevChar = dash;
               this.$options.rank = index;
               return index;
           }
-          else if (weight === this.$options.prevChar) {
+          else if (dash === this.$options.prevChar) {
               return this.$options.rank;
           }
           else {
-              this.$options.prevChar = weight;
+              this.$options.prevChar = dash;
+              this.$options.rank = index;
               return index;
           }
       },

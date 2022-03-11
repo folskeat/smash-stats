@@ -36,8 +36,8 @@
                     <td>{{ranking((index + 1), character.walk)}}</td>
                     <td><img :src="'/images/icons/' + character.image + '.png'"></td>
                     <td>{{character.name}}</td>
-                    <td v-if="!hidden"><b>{{character.weight}}</b></td>
-                    <td bgcolor="#83d8eb">{{character.walk}}</td>
+                    <td v-if="!hidden">{{character.weight}}</td>
+                    <td bgcolor="#83d8eb"><b>{{character.walk}}</b></td>
                     <td v-if="!hidden">{{character.run}}</td>
                     <td v-if="!hidden">{{character.dash}}</td>
                     <td v-if="!hidden">{{character.airmove}}</td>
@@ -251,7 +251,6 @@ export default {
       },
       hideCols() {
           this.hidden = !this.hidden;
-          console.log(this.width);
           if (this.width > 300) {
             this.width = 270;
           }

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="wrapper">
+      <h2>Search</h2>
       <div class="search">
         <form class="pure-form">
           <i class="fas fa-search"></i><input v-model="searchText" />
@@ -29,6 +30,10 @@ form {
   display: table;
   background-color: #fff;
   color: #000;
+}
+
+h2 {
+  margin-right: 20px;
 }
 
 i {
