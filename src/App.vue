@@ -8,7 +8,7 @@
         <router-link to="/walk">Walk&nbsp;Speed</router-link> |
         <router-link to="/run">Run&nbsp;Speed</router-link> |
         <router-link to="/dash">Initial&nbsp;Dash&nbsp;Speed</router-link> |
-        <router-link to="/airmov">Horizontal&nbsp;Air&nbsp;Speed</router-link> |
+        <router-link to="/airmove">Horizontal&nbsp;Air&nbsp;Speed</router-link> |
         <router-link to="/airacc">Air&nbsp;Acceleration</router-link> |
         <router-link to="fall">Fall&nbsp;Speed</router-link> |
         <router-link to="fastfall">Fast&nbsp;Fall&nbsp;Speed</router-link> |
