@@ -119,6 +119,8 @@ let stats = [
     image: 'kirby',
     isDropped: false,
     hasAlt: false,
+    hasMon: true,
+    monum: 0,
   },
   {
     csspos: 7,
@@ -1145,6 +1147,8 @@ let stats = [
     image: 'shulk',
     isDropped: false,
     hasAlt: false,
+    hasMon: true,
+    monum: 0,
   },
   {
     csspos: 58,

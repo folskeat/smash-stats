@@ -15,7 +15,7 @@
                     <img v-if="!character.toggleAlt" :src="'/images/characters/'+character.image+'.png'" @click="toggleAlt(character)">
                     <img v-if="character.toggleAlt" :src="'/images/characters/'+retAlt(character).image+'.png'" @click="toggleAlt(character)">
                 </div>
-                <div class="s">
+                <div class="s" :key="update">
                     <button @click="buttonMenus(character, characters)" :class="{'active': character.isDropped, 'inactive': !character.isDropped}">Character Stats</button>
                     <ul class="list" v-if="character.isDropped">
                         <li v-if="!character.toggleAlt">Weight: {{character.weight}}</li>
@@ -190,6 +190,11 @@ button {
 
 export default {
   name: 'HomeView',
+data() {
+    return {
+      update: true,
+    }
+  },
   methods: {
       buttonMenus(character, characters) {
           for (const obj of characters) {
@@ -204,12 +209,34 @@ export default {
           if (character.hasAlt) {
               character.toggleAlt = !character.toggleAlt;
           }
+          else if (character.hasMon) {
+              if (character.monum < 0.05) {
+                character.monum = character.monum + 0.01;
+              }
+              else {
+                  character.monum = 0;
+              }
+              if (character.monum === 0.00) {
+                  character.toggleAlt = false;
+              }
+              else {
+                  character.toggleAlt = true;
+              }
+          }
+        this.update = !this.update;
       },
       retAlt(character) {
-          let curPos = character.csspos + 0.5;
-          var found = this.$props.alternates.find(alternate => alternate.csspos === curPos);
-          return found;
-      }
+          if (!character.hasMon) {
+            let curPos = character.csspos + 0.5;
+            var found = this.$props.alternates.find(alternate => alternate.csspos === curPos);
+            return found;
+          }
+          else {
+              let curPos = character.csspos + character.monum;
+              var foundM = this.$props.alternates.find(alternate => alternate.csspos === curPos);
+              return foundM;
+          }
+      },
   },
   props: {
       characters: Array,
