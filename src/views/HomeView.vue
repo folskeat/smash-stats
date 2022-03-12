@@ -9,6 +9,9 @@
       </div>
     </div>
     <CharacterList :characters="characters" :alternates="alternates" />
+    <div class="space"></div>
+    <a href="https://github.com/folskeat/smash-stats"><img src="/images/githubwhite.png" alt=""></a>
+    <h4>Smash Stats is a fan project, created out of love for the game, and has no intended commercial uses. All characters are property of Nintendo, Konami, Bandai Namco, SEGA, Atlus, Monolith, Platinum, Square Enix, Pokemon, Mojang, and Disney.</h4>
   </div>
 </template>
 
@@ -24,6 +27,10 @@
   border-radius: 4px;
   width: 50%;
   background-color: white;
+}
+
+.space {
+    margin-bottom: 15px;
 }
 
 form {
@@ -48,6 +55,11 @@ input {
   border: none !important;
   box-shadow: none !important;
   width: 100%;
+  height: 40px;
+}
+
+img {
+  width: 40px;
   height: 40px;
 }
 </style>
