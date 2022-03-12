@@ -3,27 +3,53 @@
         <div class="characters">
             <div class="character" v-for="character in characters" :key="character.csspos">
                 <div class="info">
-                    <h1>{{character.name}}</h1>
-                    <h2>#{{character.csspos}}</h2>
+                    <h1 v-if="!character.toggleAlt">{{character.name}}</h1>
+
+                    <h1 v-if="character.toggleAlt">{{retAlt(character).name}}</h1>
+
+                    <h2 v-if="!character.toggleAlt || !retAlt(character).isEcho">#{{character.csspos}}</h2>
+
+                    <h2 v-if="character.toggleAlt && retAlt(character).isEcho">#{{character.csspos}}&epsilon;</h2>
                 </div>
                 <div class="image">
-                    <img :src="'/images/characters/'+character.image+'.png'">
+                    <img v-if="!character.toggleAlt" :src="'/images/characters/'+character.image+'.png'" @click="toggleAlt(character)">
+                    <img v-if="character.toggleAlt" :src="'/images/characters/'+retAlt(character).image+'.png'" @click="toggleAlt(character)">
                 </div>
-                <div class="stats">
+                <div class="s">
                     <button @click="buttonMenus(character, characters)" :class="{'active': character.isDropped, 'inactive': !character.isDropped}">Character Stats</button>
                     <ul class="list" v-if="character.isDropped">
-                        <li>Weight: {{character.weight}}</li>
-                        <li>Walk Speed: {{character.walk}}</li>
-                        <li>Run Speed: {{character.run}}</li>
-                        <li>Initial Dash Speed: {{character.dash}}</li>
-                        <li>Horizontal Air Speed: {{character.airmove}}</li>
-                        <li>Air Acceleration: {{character.airacc}}</li>
-                        <li>Fall Speed: {{character.fall}}</li>
-                        <li>Fast Fall Speed: {{character.fastfall}}</li>
-                        <li>Gravity Multiplier: {{character.gravity}}</li>
-                        <li>Full Hop Height: {{character.fullhop}}</li>
-                        <li>Short Hop Height: {{character.shorthop}}</li>
-                        <li>Double Jump Height: {{character.doublejump}}</li>
+                        <li v-if="!character.toggleAlt">Weight: {{character.weight}}</li>
+                        <li v-if="!character.toggleAlt">Walk Speed: {{character.walk}}</li>
+                        <li v-if="!character.toggleAlt">Run Speed: {{character.run}}</li>
+                        <li v-if="!character.toggleAlt">Initial Dash Speed: {{character.dash}}</li>
+                        <li v-if="!character.toggleAlt">Horizontal Air Speed: {{character.airmove}}</li>
+                        <li v-if="!character.toggleAlt">Air Acceleration: {{character.airacc}}</li>
+                        <li v-if="!character.toggleAlt">Fall Speed: {{character.fall}}</li>
+                        <li v-if="!character.toggleAlt">Fast Fall Speed: {{character.fastfall}}</li>
+                        <li v-if="!character.toggleAlt">Gravity Multiplier: {{character.gravity}}</li>
+                        <li v-if="!character.toggleAlt">Full Hop Height: {{character.fullhop}}</li>
+                        <li v-if="!character.toggleAlt">Short Hop Height: {{character.shorthop}}</li>
+                        <li v-if="!character.toggleAlt">Double Jump Height: {{character.doublejump}}</li>
+
+                        <!-- Echo or Alternate Stats -->
+
+                        <li v-if="character.toggleAlt">Weight: {{retAlt(character).weight}}</li>
+                        <li v-if="character.toggleAlt">Walk Speed: {{retAlt(character).walk}}</li>
+                        <li v-if="character.toggleAlt"> Run Speed: {{retAlt(character).run}}</li>
+                        <li v-if="character.toggleAlt">Initial Dash Speed: {{retAlt(character).dash}}</li>
+                        <li v-if="character.toggleAlt">Horizontal Air Speed: {{retAlt(character).airmove}}</li>
+                        <li v-if="character.toggleAlt">Air Acceleration: {{retAlt(character).airacc}}</li>
+                        <li v-if="character.toggleAlt">Fall Speed: {{retAlt(character).fall}}</li>
+                        <li v-if="character.toggleAlt">Fast Fall Speed: {{retAlt(character).fastfall}}</li>
+                        <li v-if="character.toggleAlt">Gravity Multiplier: {{retAlt(character).gravity}}</li>
+                        <li v-if="character.toggleAlt">Full Hop Height: {{retAlt(character).fullhop}}</li>
+                        <li v-if="character.toggleAlt">Short Hop Height: {{retAlt(character).shorthop}}</li>
+                        <li v-if="character.toggleAlt">Double Jump Height: {{retAlt(character).doublejump}}</li>
+
+
+
+
+
                         <!--
                         <li>Max Height from Jumps: {{(character.doublejump * character.numairjump) + character.fullhop}}</li>
                         -->
@@ -139,6 +165,7 @@ button {
 }
 
 .list {
+    color: #000;
     position: absolute;
     width: 247px;
     margin: 0px;
@@ -173,9 +200,20 @@ export default {
               obj.isDropped = false;
           }
       },
+      toggleAlt(character) {
+          if (character.hasAlt) {
+              character.toggleAlt = !character.toggleAlt;
+          }
+      },
+      retAlt(character) {
+          let curPos = character.csspos + 0.5;
+          var found = this.$props.alternates.find(alternate => alternate.csspos === curPos);
+          return found;
+      }
   },
   props: {
-      characters: Array
+      characters: Array,
+      alternates: Array,
   }
 }
 </script>

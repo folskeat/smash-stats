@@ -8,7 +8,7 @@
         </form>
       </div>
     </div>
-    <CharacterList :characters="characters" />
+    <CharacterList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -68,6 +68,9 @@ export default {
   computed: {
     characters() {
       return this.$root.$data.stat.filter(character => character.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

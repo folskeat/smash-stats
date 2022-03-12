@@ -17,6 +17,7 @@ let stats = [
     numairjump: 1,
     image: 'mario',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 2,
@@ -36,6 +37,7 @@ let stats = [
     numairjump: 1,
     image: 'dk',
     isDropped: false,
+    hasAlt: false,
   },
   {    
     csspos: 3,
@@ -55,6 +57,7 @@ let stats = [
     numairjump: 1,
     image: 'link',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 4,
@@ -74,6 +77,8 @@ let stats = [
     numairjump: 1,
     image: 'samus',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 5,
@@ -93,6 +98,7 @@ let stats = [
     numairjump: 1,
     image: 'yoshi',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 6,
@@ -112,6 +118,7 @@ let stats = [
     numairjump: 5,
     image: 'kirby',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 7,
@@ -131,6 +138,7 @@ let stats = [
     numairjump: 1,
     image: 'fox',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 8,
@@ -150,6 +158,7 @@ let stats = [
     numairjump: 1,
     image: 'pikachu',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 9,
@@ -169,6 +178,7 @@ let stats = [
     numairjump: 1,
     image: 'luigi',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 10,
@@ -188,6 +198,7 @@ let stats = [
     numairjump: 1,
     image: 'ness',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 11,
@@ -207,6 +218,7 @@ let stats = [
     numairjump: 1,
     image: 'falcon',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 12,
@@ -226,6 +238,7 @@ let stats = [
     numairjump: 5,
     image: 'puff',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 13,
@@ -245,6 +258,8 @@ let stats = [
     numairjump: 1,
     image: 'peach',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 14,
@@ -264,6 +279,7 @@ let stats = [
     numairjump: 1,
     image: 'bowser',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 15,
@@ -283,6 +299,8 @@ let stats = [
     numairjump: 1,
     image: 'icies',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 16,
@@ -302,6 +320,7 @@ let stats = [
     numairjump: 1,
     image: 'sheik',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 17,
@@ -321,6 +340,7 @@ let stats = [
     numairjump: 1,
     image: 'zelda',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 18,
@@ -340,6 +360,7 @@ let stats = [
     numairjump: 1,
     image: 'doctor',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 19,
@@ -359,6 +380,7 @@ let stats = [
     numairjump: 1,
     image: 'pichu',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 20,
@@ -378,6 +400,7 @@ let stats = [
     numairjump: 1,
     image: 'falco',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 21,
@@ -397,6 +420,8 @@ let stats = [
     numairjump: 1,
     image: 'marth',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 22,
@@ -416,6 +441,7 @@ let stats = [
     numairjump: 1,
     image: 'young',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 23,
@@ -435,6 +461,7 @@ let stats = [
     numairjump: 1,
     image: 'ganon',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 24,
@@ -454,6 +481,7 @@ let stats = [
     numairjump: 1,
     image: 'mewtwo',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 25,
@@ -473,6 +501,8 @@ let stats = [
     numairjump: 1,
     image: 'roy',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 26,
@@ -492,6 +522,7 @@ let stats = [
     numairjump: 1,
     image: 'gw',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 27,
@@ -511,6 +542,7 @@ let stats = [
     numairjump: 5,
     image: 'metaknight',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 28,
@@ -530,6 +562,8 @@ let stats = [
     numairjump: 3,
     image: 'pit',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 29,
@@ -549,6 +583,7 @@ let stats = [
     numairjump: 1,
     image: 'zss',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 30,
@@ -568,6 +603,7 @@ let stats = [
     numairjump: 1,
     image: 'wario',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 31,
@@ -587,6 +623,7 @@ let stats = [
     numairjump: 1,
     image: 'snake',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 32,
@@ -606,6 +643,7 @@ let stats = [
     numairjump: 1,
     image: 'ike',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 33,
@@ -625,6 +663,7 @@ let stats = [
     numairjump: 1,
     image: 'squirtle',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 34,
@@ -644,6 +683,7 @@ let stats = [
     numairjump: 1,
     image: 'ivy',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 35,
@@ -663,6 +703,7 @@ let stats = [
     numairjump: 2,
     image: 'zard',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 36,
@@ -682,6 +723,7 @@ let stats = [
     numairjump: 1,
     image: 'diddy',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 37,
@@ -701,6 +743,7 @@ let stats = [
     numairjump: 1,
     image: 'lucas',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 38,
@@ -720,6 +763,7 @@ let stats = [
     numairjump: 1,
     image: 'sonic',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 39,
@@ -739,6 +783,7 @@ let stats = [
     numairjump: 4,
     image: 'dedede',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 40,
@@ -758,6 +803,7 @@ let stats = [
     numairjump: 1,
     image: 'olimar',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 41,
@@ -777,6 +823,7 @@ let stats = [
     numairjump: 1,
     image: 'lucario',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 42,
@@ -796,6 +843,7 @@ let stats = [
     numairjump: 1,
     image: 'rob',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 43,
@@ -815,6 +863,7 @@ let stats = [
     numairjump: 1,
     image: 'toon',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 44,
@@ -834,6 +883,7 @@ let stats = [
     numairjump: 1,
     image: 'wolf',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 45,
@@ -853,6 +903,7 @@ let stats = [
     numairjump: 1,
     image: 'villager',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 46,
@@ -872,6 +923,7 @@ let stats = [
     numairjump: 1,
     image: 'megaman',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 47,
@@ -891,6 +943,8 @@ let stats = [
     numairjump: 1,
     image: 'wiifit',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 48,
@@ -910,6 +964,7 @@ let stats = [
     numairjump: 1,
     image: 'rosa',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 49,
@@ -929,6 +984,7 @@ let stats = [
     numairjump: 1,
     image: 'mac',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 50,
@@ -948,6 +1004,7 @@ let stats = [
     numairjump: 1,
     image: 'greninja',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 51,
@@ -967,6 +1024,7 @@ let stats = [
     numairjump: 1,
     image: 'brawler',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 52,
@@ -986,6 +1044,7 @@ let stats = [
     numairjump: 1,
     image: 'sword',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 53,
@@ -1005,6 +1064,7 @@ let stats = [
     numairjump: 1,
     image: 'gunner',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 54,
@@ -1024,6 +1084,7 @@ let stats = [
     numairjump: 1,
     image: 'palu',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 55,
@@ -1043,6 +1104,7 @@ let stats = [
     numairjump: 1,
     image: 'pacman',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 56,
@@ -1062,6 +1124,7 @@ let stats = [
     numairjump: 1,
     image: 'robin',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 57,
@@ -1081,6 +1144,7 @@ let stats = [
     numairjump: 1,
     image: 'shulk',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 58,
@@ -1100,6 +1164,7 @@ let stats = [
     numairjump: 1,
     image: 'junior',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 59,
@@ -1119,6 +1184,7 @@ let stats = [
     numairjump: 1,
     image: 'duckhunt',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 60,
@@ -1138,6 +1204,8 @@ let stats = [
     numairjump: 1,
     image: 'ryu',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 61,
@@ -1157,6 +1225,8 @@ let stats = [
     numairjump: 1,
     image: 'cloud',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 62,
@@ -1176,6 +1246,7 @@ let stats = [
     numairjump: 1,
     image: 'corrin',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 63,
@@ -1195,6 +1266,7 @@ let stats = [
     numairjump: 1,
     image: 'bayo',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 64,
@@ -1214,6 +1286,7 @@ let stats = [
     numairjump: 1,
     image: 'inkling',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 65,
@@ -1233,6 +1306,7 @@ let stats = [
     numairjump: 2,
     image: 'ridley',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 66,
@@ -1252,6 +1326,8 @@ let stats = [
     numairjump: 1,
     image: 'simon',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 67,
@@ -1271,6 +1347,7 @@ let stats = [
     numairjump: 1,
     image: 'krool',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 68,
@@ -1290,6 +1367,7 @@ let stats = [
     numairjump: 1,
     image: 'isabelle',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 69,
@@ -1309,6 +1387,7 @@ let stats = [
     numairjump: 32.8,
     image: 'incin',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 70,
@@ -1328,6 +1407,7 @@ let stats = [
     numairjump: 1,
     image: 'plant',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 71,
@@ -1347,6 +1427,7 @@ let stats = [
     numairjump: 1,
     image: 'joker',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 72,
@@ -1366,6 +1447,8 @@ let stats = [
     numairjump: 1,
     image: 'hero',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 73,
@@ -1385,6 +1468,7 @@ let stats = [
     numairjump: 2,
     image: 'banjo',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 74,
@@ -1404,6 +1488,7 @@ let stats = [
     numairjump: 1,
     image: 'terry',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 75,
@@ -1423,6 +1508,7 @@ let stats = [
     numairjump: 1,
     image: 'byleth',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 76,
@@ -1442,6 +1528,7 @@ let stats = [
     numairjump: 1,
     image: 'minmin',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 77,
@@ -1461,6 +1548,7 @@ let stats = [
     numairjump: 1,
     image: 'steve',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 78,
@@ -1480,6 +1568,8 @@ let stats = [
     numairjump: 1,
     image: 'seph',
     isDropped: false,
+    hasAlt: true,
+    toggleAlt: false,
   },
   {
     csspos: 79,
@@ -1499,6 +1589,7 @@ let stats = [
     numairjump: 1,
     image: 'pyra',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 80,
@@ -1518,6 +1609,7 @@ let stats = [
     numairjump: 1,
     image: 'mythra',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 81,
@@ -1537,6 +1629,7 @@ let stats = [
     numairjump: 1,
     image: 'kazuya',
     isDropped: false,
+    hasAlt: false,
   },
   {
     csspos: 82,
@@ -1556,6 +1649,7 @@ let stats = [
     numairjump: 1,
     image: 'sora',
     isDropped: false,
+    hasAlt: false,
   },
   /*
   {
