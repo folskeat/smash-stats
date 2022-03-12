@@ -1,6 +1,6 @@
 <template>
   <div class="weight">
-    <WeightList :characters="characters" />
+    <WeightList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -13,9 +13,12 @@ export default {
   components: {
     WeightList
   },
-    computed: {
+  computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

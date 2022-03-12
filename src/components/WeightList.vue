@@ -8,6 +8,15 @@
             </label>
         </div>
         <div class="break"></div>
+        <div class="space"></div>
+        <div class="top">
+            <h2>Show All</h2>
+            <label class="switch">
+                <input type="checkbox" @click="showAll">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="break"></div>
         <div class="characters">
             <table v-bind:style="{ width: newWidth }">
                 <col span="1" class="rank">
@@ -76,6 +85,10 @@
     flex-basis: 100%;
     flex-grow: 0;
     width: 0;
+}
+
+.space {
+    margin-bottom: 15px;
 }
 
 /*toggle slider*/
@@ -206,6 +219,7 @@ export default {
   data() {
     return {
       hidden: false,
+      show: false,
       width: 960,
     }
   },
@@ -220,14 +234,21 @@ export default {
                 }
                 return 0;
             }
-            function newArray(characters) {
+            function newArray(characters, alternates, show) {
                 var newChars = [];
-                for (var i = 0; i < characters.length; i++) {
+                var i = 0;
+                for (i = 0; i < characters.length; i++) {
                     newChars[i] = characters[i];
+                }
+                if (show) {
+                    for (i = 0; i < alternates.length; i++) {
+                        let round = Math.floor(alternates[i].csspos);
+                        newChars.splice(round + i, 0, alternates[i])
+                    }
                 }
                 return newChars;
             }
-            var newChar = newArray(this.characters);
+            var newChar = newArray(this.characters, this.alternates, this.show);
             return newChar.sort(compare);
         },
         newWidth: function () {
@@ -257,10 +278,14 @@ export default {
           else {
               this.width = 1000;
           }
+      },
+      showAll() {
+          this.show = !this.show;
       }
   },
   props: {
-      characters: Array
+      characters: Array,
+      alternates: Array,
   }
 }
 </script>

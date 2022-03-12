@@ -1336,7 +1336,7 @@ let stats = [
   {
     csspos: 67,
     name: 'King K. Rool',
-    weight: 135,
+    weight: 133,
     gravity: 0.105,
     walk: 0.903,
     run: 1.485,
