@@ -1,6 +1,6 @@
 <template>
   <div class="dash">
-    <DashList :characters="characters" />
+    <DashList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -13,9 +13,12 @@ export default {
   components: {
     DashList
   },
-    computed: {
+  computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

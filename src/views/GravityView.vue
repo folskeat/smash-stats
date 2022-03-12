@@ -1,6 +1,6 @@
 <template>
   <div class="gravity">
-    <GravityList :characters="characters" />
+    <GravityList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -13,9 +13,12 @@ export default {
   components: {
     GravityList
   },
-    computed: {
+  computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="airacc">
-    <AirAccList :characters="characters" />
+    <AirAccList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -13,9 +13,12 @@ export default {
   components: {
     AirAccList
   },
-    computed: {
+  computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

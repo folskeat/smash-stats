@@ -1,6 +1,6 @@
 <template>
   <div class="fastfall">
-    <FastFallList :characters="characters" />
+    <FastFallList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -13,9 +13,12 @@ export default {
   components: {
     FastFallList
   },
-    computed: {
+  computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

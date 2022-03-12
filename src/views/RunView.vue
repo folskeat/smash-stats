@@ -1,6 +1,6 @@
 <template>
   <div class="run">
-    <RunList :characters="characters" />
+    <RunList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -16,6 +16,9 @@ export default {
     computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

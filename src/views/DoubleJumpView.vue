@@ -1,6 +1,6 @@
 <template>
   <div class="doublejump">
-    <DoubleJumpList :characters="characters" />
+    <DoubleJumpList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -13,9 +13,12 @@ export default {
   components: {
     DoubleJumpList
   },
-    computed: {
+  computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }

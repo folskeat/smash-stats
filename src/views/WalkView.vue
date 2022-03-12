@@ -1,6 +1,6 @@
 <template>
   <div class="walk">
-    <WalkList :characters="characters" />
+    <WalkList :characters="characters" :alternates="alternates" />
   </div>
 </template>
 
@@ -16,6 +16,9 @@ export default {
     computed: {
     characters() {
       return this.$root.$data.stat;
+    },
+    alternates() {
+      return this.$root.$data.alt;
     }
   }
 }
