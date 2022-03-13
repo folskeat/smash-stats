@@ -178,6 +178,7 @@ input:checked + .slider:before {
     height: 25px;
     white-space: nowrap;
     overflow: auto;
+    width: 67px;
 }
 
 .characters th {
