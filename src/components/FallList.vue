@@ -178,7 +178,7 @@ input:checked + .slider:before {
     height: 25px;
     white-space: nowrap;
     overflow: auto;
-    width: 67px;
+    width: 160px;
 }
 
 .characters th {
@@ -203,7 +203,7 @@ td img {
 }
 
 .name {
-    width: 100px;
+    width: 150px;
 }
 
 .auto {
