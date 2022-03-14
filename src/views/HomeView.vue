@@ -11,7 +11,9 @@
     <CharacterList :characters="characters" :alternates="alternates" />
     <div class="space"></div>
     <a href="https://github.com/folskeat/smash-stats"><img src="/images/githubwhite.png" alt=""></a>
-    <h4>Smash Stats is a fan project, created out of love for the game, and has no intended commercial uses. All characters are property of Nintendo, Konami, Bandai Namco, SEGA, Atlus, Monolith, Platinum, Square Enix, Pokemon, Mojang, and Disney.</h4>
+    <h4>Smash Stats is a fan project, created out of love for the game, and has no intended commercial uses. 
+      All characters are property of Nintendo, Konami, Bandai Namco, SEGA, Atlus, Monolith, Platinum, Square Enix, 
+      Pokemon, CAPCOM, Microsoft, Rare, Mojang, and Disney.</h4>
   </div>
 </template>
 
