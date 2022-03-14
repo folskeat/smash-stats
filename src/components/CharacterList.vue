@@ -154,6 +154,11 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background: #cdcdcd;
+    color: #111;
+}
+
 .active {
     background: #fdfdfd;
     color: #000;
@@ -167,7 +172,7 @@ button {
 .list {
     color: #000;
     position: absolute;
-    width: 247px;
+    width: 250px;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
