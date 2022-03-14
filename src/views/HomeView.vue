@@ -41,6 +41,10 @@ form {
   color: #000;
 }
 
+.pure-form {
+  width: 100%;
+}
+
 h2 {
   margin-right: 20px;
 }
